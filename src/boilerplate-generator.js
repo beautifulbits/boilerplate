@@ -25,7 +25,7 @@ export class BoilerplateGenerator {
 
     this.cliWorkingDir = process.cwd();
     this.templateDir = `__boilerplate__`;
-    this.boilerplateConfigFile = 'boilerplate.config.js';
+    this.boilerplateConfigFile = 'boilerplate.config.mjs';
     this.templateDirPath = `${path.join(
       this.cliWorkingDir,
       this.templateDir
