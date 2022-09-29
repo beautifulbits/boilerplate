@@ -110,7 +110,7 @@ export class BoilerplateGenerator {
 
     try {
       const files = await recursiveReaddir.list(this.templateDirPath, {
-        exclude: [`boilerplate.config.js`],
+        exclude: [this.boilerplateConfigFile],
         ignoreFolders: false,
       });
       this.templateFiles = files;
