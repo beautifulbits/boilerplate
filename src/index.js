@@ -22,7 +22,8 @@
  * Pluralize and singularize any word.
  */
 
-import changeCase from 'change-case';
-import pluralize from 'pluralize';
+import _changeCase from 'change-case';
+import _pluralize from 'pluralize';
 
-export default { changeCase, pluralize };
+export const changeCase = _changeCase;
+export const pluralize = _pluralize;
