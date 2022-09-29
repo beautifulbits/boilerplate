@@ -1,7 +1,7 @@
 {
   "name": "@beautifulbits/boilerplate",
-  "version": "0.0.1",
-  "description": "CLI tool for generate boilerplate code out of templates",
+  "version": "0.1.0",
+  "description": "CLI for generating boilerplate code out of templates",
   "main": "./src/index.js",
   "scripts": {
     "test": "test"
@@ -10,13 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/beautifulbits/boilerplate.git"
   },
-  "bin": "./src/index.js",
+  "bin": "./src/exec.js",
   "keywords": [
     "cli",
     "boilerplate",
     "templates",
     "nodejs"
   ],
+  "type": "module",
   "author": "Nathaniel Velez",
   "license": "MIT",
   "bugs": {

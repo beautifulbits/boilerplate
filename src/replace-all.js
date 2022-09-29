@@ -1,4 +1,4 @@
-function replaceAll(str, replacements) {
+export function replaceAll(str, replacements) {
   let replaced = str;
   Object.keys(replacements).forEach((replacementKey) => {
     const replaceWith = replacements[replacementKey];
@@ -6,5 +6,3 @@ function replaceAll(str, replacements) {
   });
   return replaced;
 }
-
-module.exports = { replaceAll };
