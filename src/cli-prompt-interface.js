@@ -1,6 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import enquirer from 'enquirer';
+import consola from 'consola';
 
 const { Select, Form } = enquirer;
 
@@ -23,7 +24,6 @@ export class CliPromptInterface {
   /* ------------------------------------------------------------------------ */
   async getDirectories(source) {
     const allFiles = await fs.promises.readdir(source, { withFileTypes: true });
-    console.log('allFiles', allFiles);
     const directories = allFiles
       .filter((dirent) => dirent.isDirectory())
       .map((dirent) => dirent.name);
@@ -67,7 +67,7 @@ export class CliPromptInterface {
         .run()
         .then((answer) => {
           if (this.verbose) {
-            console.log('Template selected:', answer);
+            consola.log('Template selected:', answer);
           }
           this.selectedTemplate = answer;
         })
@@ -83,8 +83,8 @@ export class CliPromptInterface {
         choices: [
           {
             name: 'selectedModuleName',
-            message: 'Template',
-            initial: 'NameOfOutputModule',
+            message: 'Name',
+            initial: 'MyNewModule',
           },
           {
             name: 'selectedDestination',
@@ -97,7 +97,6 @@ export class CliPromptInterface {
       await formPrompt
         .run()
         .then((answers) => {
-          console.log('Details:', answers);
           if (this.verbose) {
             console.log('Template selected:', answers);
           }
