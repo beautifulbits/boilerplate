@@ -4,10 +4,10 @@ Boilerplate is CLI tool used for generating code out of template files.
 
 ## Features
 
-Create multiple boilerplate templates for your project.
-Your templates can be composed of multiple files and folders.
-No special syntax is needed; the templates are composed of standard code files.
-Commit the templates to the project's repository so all collaborators can use them.
+- Create multiple boilerplate templates for your project.
+- Your templates can be composed of multiple files and folders.
+- No special syntax is needed; the templates are composed of standard code files.
+- Commit the templates to the project's repository so all collaborators can use them.
 
 ## How to use
 
